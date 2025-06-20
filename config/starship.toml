@@ -1,0 +1,79 @@
+add_newline = true
+
+format = """
+[╭─](bold blue)$username$hostname$directory$git_branch$git_status
+$python$nodejs$docker_context$php$java$golang$cmd_duration
+[╰─➜](bold blue) """
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+[directory]
+style = "bold cyan"
+truncation_length = 1000
+truncate_to_repo = false
+home_symbol = "🏠"
+read_only = " 🔒"
+read_only_style = "red"
+
+[username]
+show_always = true
+style_user = "bold blue"
+format = "[$user]($style) "
+
+[hostname]
+ssh_only = false
+style = "bold blue"
+format = "on [$hostname](bold blue) "
+
+[git_branch]
+symbol = "🍃 "
+style = "bold magenta"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+format = ' ([ $all_status$ahead_behind ](bold yellow))'
+conflicted = " ⚔️ ${count}"
+ahead     = " 🚀 ${count}"
+behind    = " 🐢 ${count}"
+staged    = " 📦 ${count}"
+deleted   = " 🗑️ ${count}"
+modified  = " ✏️ ${count}"
+untracked = " ❓ ${count}"
+style = "bold yellow"
+
+[python]
+symbol = "🐍 "
+format = "[├─](bold blue) via [$symbol $version](bold green) [🧪 $virtualenv](italic bright-cyan)"
+style = "bold green"
+
+[nodejs]
+symbol = "⬢ "
+format = "[├─](bold blue) via [$symbol$version](bold green)"
+style = "bold green"
+
+[docker_context]
+symbol = "🐳 "
+format = "[├─](bold blue) in [$symbol$context](bold blue)"
+style = "bold blue"
+
+[php]
+symbol = "🐘 "
+format = "[├─](bold blue) via [$symbol$version](bold magenta)"
+style = "bold magenta"
+
+[java]
+symbol = "☕ "
+format = "[├─](bold blue) via [$symbol$version](bold red)"
+style = "bold red"
+
+[golang]
+symbol = "🦫 "
+format = "[├─](bold blue) via [$symbol$version](bold yellow)"
+style = "bold yellow"
+
+[cmd_duration]
+min_time = 500
+format = "[├─](bold blue) ⏱ [$duration](bold yellow)"
+style = "bold yellow"
