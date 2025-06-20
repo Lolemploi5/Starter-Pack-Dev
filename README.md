@@ -99,6 +99,27 @@ success_symbol = "[➜](bold green)"
 error_symbol = "[➜](bold red)"
 ```
 
+#### 🌟 Presets officiels Starship
+
+Pour une personnalisation avancée, Starship propose de nombreux presets prêts à l'emploi :
+
+- **[Nerd Font Symbols](https://starship.rs/presets/nerd-font.html)** - Utilise les symboles Nerd Font
+- **[No Nerd Font](https://starship.rs/presets/no-nerd-font.html)** - Sans polices spéciales
+- **[Bracketed Segments](https://starship.rs/presets/bracketed-segments.html)** - Segments entre crochets
+- **[Plain Text Symbols](https://starship.rs/presets/plain-text.html)** - Symboles en texte simple
+- **[No Runtime Versions](https://starship.rs/presets/no-runtimes.html)** - Cache les versions des langages
+- **[No Empty Icons](https://starship.rs/presets/no-empty-icons.html)** - Supprime les icônes vides
+- **[Pure Preset](https://starship.rs/presets/pure-preset.html)** - Imite Pure prompt
+- **[Pastel Powerline](https://starship.rs/presets/pastel-powerline.html)** - Style powerline pastel
+
+🔗 **[Voir tous les presets officiels](https://starship.rs/presets/)** sur le site Starship
+
+Pour utiliser un preset :
+
+1. Copiez la configuration du preset choisi
+2. Remplacez le contenu de `~/.config/starship.toml`
+3. Redémarrez votre terminal
+
 ### 📁 Structure du projet
 
 ```text
