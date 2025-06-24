@@ -176,15 +176,14 @@ try {
     # =============================================================================
     
     Write-Header "$($Script:Symbols.Package) INSTALLATION DES OUTILS DE DÉVELOPPEMENT"
-    
-    # Liste des packages à installer
+      # Liste des packages à installer
     $packages = @(
         @{ Id = "Git.Git"; Name = "Git" },
         @{ Id = "Microsoft.WindowsTerminal"; Name = "Windows Terminal" },
         @{ Id = "Microsoft.VisualStudioCode"; Name = "Visual Studio Code" },
         @{ Id = "OpenJS.NodeJS.LTS"; Name = "Node.js LTS" },
         @{ Id = "Python.Python.3.11"; Name = "Python 3.11" },
-        @{ Id = "Eclipse.Temurin.21.JDK"; Name = "OpenJDK 21" },
+        @{ Id = "EclipseAdoptium.Temurin.21.JDK"; Name = "OpenJDK 21" },
         @{ Id = "GoLang.Go"; Name = "Go" },
         @{ Id = "Starship.Starship"; Name = "Starship" },
         @{ Id = "GitHub.cli"; Name = "GitHub CLI" },
